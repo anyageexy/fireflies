@@ -11,3 +11,26 @@ body{
     background-color: #000;
     overflow: hidden;
 }
+.fireflies-container{
+    position: relative;
+    width: 750px;
+    height: 750px;
+}
+.fireflies-container span{
+    position: absolute;
+    top:calc(80px * var(--i));
+    left:calc(80px * var(--i));
+    bottom:calc(80px * var(--i));
+    right:calc(80px * var(--i));
+}
+.fireflies-container span:before{
+    content:"";
+    position: absolute;/*абсолютное позиционирование чтобы не влияли на другие элементы на странице*/
+    background: #f00;
+    top:50%;
+    width: 15px;/*задание размера*/
+    height: 15px;
+    border-radius: 50%;/*делаем кружочки*/
+    top:50%;
+    left: -8px;
+}
