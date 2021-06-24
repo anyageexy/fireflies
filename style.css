@@ -34,3 +34,11 @@ body{
     top:50%;
     left: -8px;
 }
+.fireflies-container span:nth-child(3n + 1):before{/*паттерн обхода элементов: 1, 4, 7, 10 и тд*/
+    background: rgba(134, 255, 0, 1);/*салатовый*/
+    box-shadow: 0 0 20px rgba(134, 255, 0, 1),/*свечение*/
+                0 0 40px rgba(134, 255, 0, 1),
+                0 0 60px rgba(134, 255, 0, 1),
+                0 0 80px rgba(134, 255, 0, 1),
+                0 0 0 8px rgba(134, 255, 0, .1);
+}
